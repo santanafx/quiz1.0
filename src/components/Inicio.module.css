@@ -1,0 +1,43 @@
+.inicioContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0rem;
+
+}
+
+.inicioContainer h1 {
+    margin: 2rem 0rem;
+}
+
+.inicioContainer h4 {
+    margin: 0.5rem 0rem;
+    color: rgb(78, 78, 78);
+}
+
+button {
+    padding: 10px 40px;
+    border-radius: 20px;
+    border-style: none;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 2rem 0rem;
+    background: linear-gradient(90deg,
+            rgb(254, 238, 55) 0%,
+            rgb(204, 201, 44) 100%);
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    background: linear-gradient(90deg,
+            rgb(254, 238, 55) 100%,
+            rgb(204, 201, 44) 0%);
+}
+
+img {
+    width: 1000px;
+    margin: 2rem 0rem;
+    border-style: solid;
+}
