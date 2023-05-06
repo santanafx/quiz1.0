@@ -13,6 +13,6 @@ export const Inicio = () => {
             <h4>Clique abaixo para começar!</h4>
             <button onClick={() => (dispatch({ type: 'STAGE_1' }))}>Iniciar</button>
             <img src={quiz} alt="Imagem do quiz" />
-        </div>
+        </div >
     )
 }
