@@ -5,7 +5,12 @@ import { Option } from './Option';
 export const Perguntas = () => {
     const [quizState, dispatch] = React.useContext(QuizContext);
 
-    console.log(quizState)
+    const select = (option) => {
+        dispatch({
+            type: 'CHECK_ANSWER',
+            payload: { answer: quizState.questions[quizState.currentQuestion].answer, option }
+        })
+    }
 
     return (
         <div>
@@ -13,13 +18,10 @@ export const Perguntas = () => {
             <h2>{quizState.questions[quizState.currentQuestion].question}</h2>
             <div>
                 {quizState.questions[quizState.currentQuestion].options.map(option => (
-                    <Option key={option} value={option} onSelect={() => (dispatch({
-                        type: 'CHECK_ANSWER',
-                        payload: { answer: quizState.questions[quizState.currentQuestion].answer, option }
-                    }))} />)
+                    <Option key={option} value={option} onSelect={() => select(option)} />)
                 )}
             </div>
-            <button>Próximo</button>
-        </div>
+            <button onClick={() => { dispatch({ type: 'CHANGE_QUESTION' }) }}>Próximo</button>
+        </div >
     )
 }
