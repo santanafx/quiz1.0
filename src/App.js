@@ -7,7 +7,6 @@ import { Perguntas } from './components/Perguntas';
 function App() {
   const [quizState, dispatch] = React.useContext(QuizContext);
 
-
   return (
     <>
       {quizState.estado === 'meio' ? <Perguntas /> : <Inicio />}

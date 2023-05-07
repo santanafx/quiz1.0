@@ -1,4 +1,4 @@
-export const data = [
+export const questions = [
     {
         question: 'Quem descobriu o Brasil?',
         options: ['A - Pedro Álvares Cabral', 'B - Joaquim Rodriguez', 'C - Agenor De Mogi', 'D - Vaz de Caminha'],
@@ -15,3 +15,4 @@ export const data = [
         answer: 'A - Porto Seguro'
     }
 ]
+
